@@ -15,6 +15,14 @@
 
 ---
 
+## 🖼️ תצוגות מסך
+
+<p float="left">
+  <img src="./assets/screenshots/home.jpg" width="30%" />
+  <img src="./assets/screenshots/search.jpg" width="30%" />
+  <img src="./assets/screenshots/details.jpg" width="30%" />
+</p>
+
 ## 🧱 טכנולוגיות בשימוש
 
 | טכנולוגיה       | תיאור |
