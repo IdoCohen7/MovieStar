@@ -1,50 +1,61 @@
-# Welcome to your Expo app 👋
+# 🎬 Movie Star
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**Movie Star** היא אפליקציית מובייל שנבנתה ב־React Native עם Expo ו-TypeScript, ומעוצבת באמצעות Tailwind CSS.  
+האפליקציה מציגה סרטים פופולריים בעיצוב מודרני ומבוססת על נתונים חיים מ־[TMDB API](https://www.themoviedb.org/documentation/api).
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 תכונות עיקריות
 
-   ```bash
-   npm install
-   ```
+- 🔥 **Trending Movies** – סרטים פופולריים לפי חיפושי משתמשים באפליקציה.
+- 🎞️ **Latest Hot Movies** – הסרטים הלוהטים ביותר עכשיו מה-TMDB.
+- 🔎 **מנוע חיפוש** – מאפשר למשתמשים לחפש סרטים לפי שם.
+- 🧠 **למידת הרגלי שימוש** – כל חיפוש משפיע על רשימת ה־Trending.
+- ☁️ **שירות צד שרת באמצעות Appwrite** – לניהול מסד נתונים, אחסון וחיבור מאובטח.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🧱 טכנולוגיות בשימוש
 
-In the output, you'll find options to open the app in a
+| טכנולוגיה       | תיאור |
+|------------------|--------|
+| **React Native** | לפיתוח חוצה פלטפורמות |
+| **Expo**         | לבנייה והרצה מהירה |
+| **TypeScript**   | הקלדה סטטית ובטיחות בקוד |
+| **Tailwind CSS** | עיצוב יעיל ומהיר עם Utility Classes |
+| **TMDB API**     | מקור הסרטים |
+| **Appwrite**     | Backend לניהול מסד נתונים וחיפושים |
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📁 מבנה עתידי
 
-## Get a fresh project
+האפליקציה תתרחב בקרוב עם שני מסכים חדשים:
 
-When you're ready, run:
+- **Saved** – מסך מועדפים שבו המשתמשים יוכלו לשמור סרטים לעיון עתידי.
+- **Profile** – מסך פרופיל אישי שיציג פרטי משתמש, סטטיסטיקות וצפיות קודמות.
+
+---
+
+## 🛠️ התקנה מקומית
 
 ```bash
-npm run reset-project
-```
+git clone https://github.com/your-username/movie-star.git
+cd movie-star
+npm install
+npx expo start
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## משתני סביבה
 
-## Learn more
+# מפתח ה-API שלך מ-TMDB
+EXPO_PUBLIC_TMDB_API_KEY=your_tmdb_api_key
 
-To learn more about developing your project with Expo, look at the following resources:
+# מזהה פרויקט Appwrite
+EXPO_PUBLIC_APPWRITE_PROJECT_ID=your_appwrite_project_id
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+# מזהה מסד נתונים Appwrite
+EXPO_PUBLIC_APPWRITE_DATABASE_ID=your_database_id
 
-## Join the community
+# מזהה קולקציית החיפושים ב-Appwrite
+EXPO_PUBLIC_APPWRITE_COLLECTION_ID=your_collection_id
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
