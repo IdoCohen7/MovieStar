@@ -1,6 +1,5 @@
 import MovieCard from "@/components/MovieCard";
 import TrendingCard from "@/components/TrendingCard";
-import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
 import { fetchMovies } from "@/services/api";
 import { getTrendingMovies } from "@/services/appwrite";
@@ -38,9 +37,10 @@ export default function Index() {
         contentContainerStyle={{ minHeight: "100%", paddingBottom: 10 }}
       >
         <Image
-          source={icons.logo}
-          className="w-12 h-10 mt-20 mb-5 mx-auto"
-        ></Image>
+          source={images.starLogo}
+          className="w-28 h-28 mt-20 mb-5 mx-auto"
+          resizeMode="contain"
+        />
         {moviesLoading || trendingLoading ? (
           <ActivityIndicator
             size="large"

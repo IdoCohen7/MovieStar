@@ -1,6 +1,5 @@
 import MovieCard from "@/components/MovieCard";
 import SearchBar from "@/components/SearchBar";
-import { icons } from "@/constants/icons";
 import { images } from "@/constants/images";
 import { fetchMovies } from "@/services/api";
 import { updateSearchCount } from "@/services/appwrite";
@@ -59,7 +58,11 @@ const Search = () => {
         ListHeaderComponent={
           <>
             <View className="w-full flex-row justify-center mt-20">
-              <Image source={icons.logo} className="w-12 h-10" />
+              <Image
+                source={images.starLogo}
+                className="w-28 h-28 mb-5 mx-auto"
+                resizeMode="contain"
+              />
             </View>
             <View className="my-5 mt-10">
               <SearchBar
