@@ -20,7 +20,7 @@ const API_BASE =
     ? "http://10.0.2.2:3000"
     : Platform.OS === "web"
     ? "http://localhost:3000"
-    : "http://10.0.0.11:3000";
+    : "http://10.0.0.10:3000";
 
 type Mode = "login" | "signup";
 

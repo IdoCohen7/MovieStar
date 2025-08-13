@@ -13,6 +13,7 @@ import {
   RefreshControl,
   StatusBar,
   Text,
+  TouchableOpacity,
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
@@ -24,7 +25,7 @@ const API_BASE =
     ? "http://10.0.2.2:3000"
     : Platform.OS === "web"
     ? "http://localhost:3000"
-    : "http://10.0.0.11:3000"; // iOS/device: use your machine IP
+    : "http://10.0.0.10:3000"; // iOS/device: use your machine IP
 
 const Saved: React.FC = () => {
   const { user, authFetch } = useAuth();
@@ -106,9 +107,9 @@ const Saved: React.FC = () => {
                 source={images.starLogo}
                 className="w-28 h-28 mb-5 mx-auto"
                 resizeMode="contain"
-              />{" "}
+              />
               <Text className="text-white text-xl font-semibold mt-4 self-start">
-                Saved Movies
+                {`${user.firstName + " " + user.lastName + "'s "}Saved Movies`}
               </Text>
             </View>
 
@@ -117,9 +118,9 @@ const Saved: React.FC = () => {
               {error ? (
                 <View className="flex-1 items-center justify-center gap-2">
                   <Text className="text-red-400">{error}</Text>
-                  <Text onPress={loadSaved} className="text-white underline">
-                    Try again
-                  </Text>
+                  <TouchableOpacity onPress={() => loadSaved()}>
+                    <Text className="text-white underline">Try again</Text>
+                  </TouchableOpacity>
                 </View>
               ) : loading && !refreshing ? (
                 <View className="flex-1 items-center justify-center">
