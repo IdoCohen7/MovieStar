@@ -75,3 +75,26 @@ interface TrendingCardProps {
   movie: TrendingMovie;
   index: number;
 }
+
+interface User {
+  id: string; // אם השרת מחזיר מספר, המירו ל-String לפני שמירה
+  firstName: string;
+  lastName: string;
+  email: string;
+}
+
+interface AuthContextType {
+  user: User | null;
+  token: string | null;
+  loading: boolean;
+  login: (payload: { user: User; token: string }) => Promise<void>;
+  logout: () => Promise<void>;
+  /**
+   * Wrapper around fetch that injects Authorization header.
+   * If server returns 401, it auto-logs out and throws an Error.
+   */
+  authFetch: (
+    input: RequestInfo | URL,
+    init?: RequestInit
+  ) => Promise<Response>;
+}

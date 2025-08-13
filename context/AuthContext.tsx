@@ -8,30 +8,11 @@ import React, {
   useState,
 } from "react";
 
-export interface User {
-  id: string; // אם השרת מחזיר מספר, המירו ל-String לפני שמירה
-  firstName: string;
-  lastName: string;
-  email: string;
-}
+
 
 type AuthStorage = { user: User; token: string };
 
-interface AuthContextType {
-  user: User | null;
-  token: string | null;
-  loading: boolean;
-  login: (payload: { user: User; token: string }) => Promise<void>;
-  logout: () => Promise<void>;
-  /**
-   * Wrapper around fetch that injects Authorization header.
-   * If server returns 401, it auto-logs out and throws an Error.
-   */
-  authFetch: (
-    input: RequestInfo | URL,
-    init?: RequestInit
-  ) => Promise<Response>;
-}
+
 
 const STORAGE_KEY = "auth";
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
