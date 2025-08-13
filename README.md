@@ -1,8 +1,9 @@
 # 🎬 Movie Star
 
-**Movie Star** היא אפליקציית מובייל שנבנתה ב־React Native עם Expo ו-TypeScript, ומעוצבת באמצעות Tailwind CSS.  
-האפליקציה מציגה סרטים פופולריים בעיצוב מודרני ומבוססת על נתונים חיים מ־[TMDB API](https://www.themoviedb.org/documentation/api). 
-
+**Movie Star** היא אפליקציית מובייל חכמה להצגת סרטים פופולריים וחדשים, שנבנתה בטכנולוגיות מודרניות לשיפור חוויית המשתמש והביצועים.  
+האפליקציה פותחה ב־**React Native** עם **Expo** ו־**TypeScript**, ומעוצבת באמצעות **Tailwind CSS** בעיצוב רספונסיבי ויעיל.  
+המידע על הסרטים מתקבל בזמן אמת מ־[TMDB API](https://www.themoviedb.org/documentation/api), לצד מערכת ניהול משתמשים מאובטחת עם **Supabase**, **Node.js**, ו־**Express**.  
+נתוני המשתמשים והסרטים שאהבו נשמרים במסד נתונים SQL, והגישה מוגנת באמצעות **JWT Tokens** לאבטחה מקסימלית.
 
 ---
 
@@ -35,14 +36,17 @@
 ## 🧱 טכנולוגיות בשימוש
 
 | טכנולוגיה       | תיאור |
-|------------------|--------|
-| **React Native** | לפיתוח חוצה פלטפורמות |
-| **Expo**         | לבנייה והרצה מהירה |
-| **TypeScript**   | הקלדה סטטית ובטיחות בקוד |
-| **Tailwind CSS** | עיצוב יעיל ומהיר עם Utility Classes |
-| **TMDB API**     | מקור הסרטים |
-| **Appwrite**     | Backend לניהול מסד נתונים וחיפושים |
-| **Supabase**     | לאחסון נתוני המשתמשים |
+|-------------------|--------|
+| **React Native**  | לפיתוח חוצה פלטפורמות |
+| **Expo**          | לבנייה והרצה מהירה |
+| **TypeScript**    | הקלדה סטטית ובטיחות בקוד |
+| **Tailwind CSS**  | עיצוב יעיל ומהיר עם Utility Classes |
+| **TMDB API**      | מקור הסרטים |
+| **Appwrite**      | Backend לניהול מסד נתונים וחיפושים |
+| **Supabase**      | לאחסון נתוני המשתמשים |
+| **Node.js**       | סביבת ריצה בצד השרת |
+| **Express**       | פריימוורק קליל לבניית API ב־Node.js |
+
 
 
 
