@@ -3,7 +3,6 @@
 **Movie Star** היא אפליקציית מובייל שנבנתה ב־React Native עם Expo ו-TypeScript, ומעוצבת באמצעות Tailwind CSS.  
 האפליקציה מציגה סרטים פופולריים בעיצוב מודרני ומבוססת על נתונים חיים מ־[TMDB API](https://www.themoviedb.org/documentation/api). 
 
-[צפה בסרטון](https://www.youtube.com/shorts/m52OnAwSmeQ)
 
 ---
 
@@ -21,6 +20,9 @@
 ---
 
 ## 🖼️ תצוגות מסך
+
+[צפה בסרטון](https://www.youtube.com/shorts/m52OnAwSmeQ)
+
 
 <p float="left">
   <img src="./assets/screenshots/home.jpg" width="19%" />
